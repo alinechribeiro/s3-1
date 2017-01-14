@@ -13,14 +13,20 @@ DATABASES = {
     }
 }
 
+###################### LARRY ############################
+##FALTA ACERTAR ESSE DISQUS
 DISQUS_API_KEY = 'ZruTajAt8E3Ao1F2fzL2Dx9VUra9u0XABGKdSLXtAIHN3gL0qoUwJYywaqMEKkB8'
 DISQUS_WEBSITE_SHORTNAME = 'codeinstitutesocialstaging'
+###################### LARRY ############################
 
-# Stripe environment variables
-STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_nbWefqblVg8HnYsFmpcld8qj')
-STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_N35jP51CRqW4FKBMa8MAL1A4')
 
+##LARRY
+# Stripe environment variables (ALINE)
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_liZCnyfYKT14az1lNtQHGB2k')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_3CGVcNJRchvGx7zp17jBIgRD')
+
+###################### LARRY ALTEROU ############################
 # Paypal environment variables
 SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
-PAYPAL_RECEIVER_EMAIL = 'aaron@codeinstitute.net'
+PAYPAL_NOTIFY_URL = 'https://3ce40121.ngrok.io/'
+PAYPAL_RECEIVER_EMAIL = 'alinechribeiro@gmail.com'
