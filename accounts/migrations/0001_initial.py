@@ -5,7 +5,9 @@ from django.db import migrations, models
 import django.utils.timezone
 import accounts.models
 import django.core.validators
-
+from django.contrib.auth.models import User, Group 
+def add_operations_group(apps, schema_editor):
+    Group.objects.get_or_create(name='operations')
 
 class Migration(migrations.Migration):
 
