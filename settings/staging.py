@@ -23,5 +23,5 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_3CGVcNJRchvGx7zp17jBIgRD')
 ###################### LARRY ALTEROU ############################
 # Paypal environment variables
 SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'https://3ce40121.ngrok.io/'
+PAYPAL_NOTIFY_URL = 'https://4d6e916a.ngrok.io/'
 PAYPAL_RECEIVER_EMAIL = 'alinechribeiro@gmail.com'
