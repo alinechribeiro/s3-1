@@ -10,7 +10,7 @@ INSTALLED_APPS.append('debug_toolbar')
 MIDDLEWARE_CLASSES.append('debug_toolbar.middleware.DebugToolbarMiddleware')
 
 #LARRY ADICIONOU A LINHA ABAIXO
-DATABASES['default'] = dj_database_url.parse("mysql://be16e7dcc4b577:1d7faf72@us-cdbr-iron-east-04.cleardb.net/heroku_9d7b5325c374e89?reconnect=true")
+#DATABASES['default'] = dj_database_url.parse("mysql://be16e7dcc4b577:1d7faf72@us-cdbr-iron-east-04.cleardb.net/heroku_9d7b5325c374e89?reconnect=true")
 #LARRY COMENTOU AS LINHAS ABAIXO
 #DATABASES = {
 #    'default': {
