@@ -4,12 +4,12 @@ import settings
 
 DEBUG = True
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': 'mydatabase',
+#    }
+#}
 
 ###################### LARRY ############################
 ##FALTA ACERTAR ESSES DADOS

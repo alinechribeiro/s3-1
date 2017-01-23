@@ -1,4 +1,5 @@
 from base import *
+import dj_database_url
 
 DEBUG = True
 
@@ -6,12 +7,15 @@ INSTALLED_APPS.append('debug_toolbar')
 
 MIDDLEWARE_CLASSES.append('debug_toolbar.middleware.DebugToolbarMiddleware')
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+#LARRY ADICIONOU A LINHA ABAIXO
+DATABASES['default'] = dj_database_url.parse("mysql://be16e7dcc4b577:1d7faf72@us-cdbr-iron-east-04.cleardb.net/heroku_9d7b5325c374e89?reconnect=true")
+#LARRY COMENTOU AS LINHAS ABAIXO
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
 
 ###################### LARRY ############################
 ##FALTA ACERTAR ESSE DISQUS
