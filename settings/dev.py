@@ -2,8 +2,8 @@ from base import *
 import os
 import sys
 import urlparse
-import pymysql
-pymysql.install_as_MySQLdb()
+import MySQLdb
+#pymysql.install_as_MySQLdb()
 
 DEBUG = True
 
