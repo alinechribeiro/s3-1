@@ -20,7 +20,7 @@ DISQUS_WEBSITE_SHORTNAME = 'codeinstitutesocialstaging'
 ###################### LARRY ############################
 
 
-##LARRY
+##LARRY x
 # Stripe environment variables (ALINE)
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_liZCnyfYKT14az1lNtQHGB2k')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_3CGVcNJRchvGx7zp17jBIgRD')
