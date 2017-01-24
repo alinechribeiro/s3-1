@@ -1,4 +1,5 @@
 from base import *
+import dj_database_url
 
 DEBUG = True
 
@@ -15,6 +16,22 @@ MIDDLEWARE_CLASSES.append('debug_toolbar.middleware.DebugToolbarMiddleware')
 #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #    }
 #}
+
+# Register database schemes in URLs.
+urlparse.uses_netloc.append('mysql')
+
+# Update with environment configuration.
+DATABASES = {
+	['default'] : {
+       		'ENGINE': 'django.db.backends.mysql',
+       		'NAME': url.path[1:],
+       		'USER': url.username,
+       		'PASSWORD': url.password,
+       		'HOST': url.hostname,
+       		'PORT': url.port,
+      	} 
+}
+
 
 
 ###################### LARRY ############################
