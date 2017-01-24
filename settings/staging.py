@@ -23,6 +23,7 @@ try:
 
         # Update with environment configuration.
         DATABASES['default'].update({
+	    'ENGINE': 'django.db.backends.mysql',
             'NAME': url.path[1:],
             'USER': url.username,
             'PASSWORD': url.password,
@@ -31,8 +32,8 @@ try:
         })
 
 
-        if url.scheme == 'mysql':
-            DATABASES['default']['ENGINE'] = 'django.db.backends.mysql'
+       # if url.scheme == 'mysql':
+       #     DATABASES['default']['ENGINE'] = 'django.db.backends.mysql'
 except Exception:
     print 'Unexpected error:', sys.exc_info()
 
